@@ -1,6 +1,6 @@
 extends: substitution
-message: "Use '%s' instead of '%s'"
+message: "Use Use '%s' instead of 'Habitat'."
 level: error
-ignorecase: false
 swap:
-  '(?:[^\s]*) ?Habitat': Chef Habitat
+  '(?:[^\s]* ){0,1}Habitat': Chef Habitat
+

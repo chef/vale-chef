@@ -1,0 +1,7 @@
+extends: substitution
+message: "Use Use '%s' instead of 'hart' or "artifact"."
+level: error
+swap:
+  '(?:[^\s]* ){0,2}hart': Chef Habitat Artifact
+  '(?:[^\s]* ){0,2}artifact': Chef Habitat Artifact
+
