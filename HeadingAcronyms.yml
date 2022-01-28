@@ -10,5 +10,6 @@ exceptions:
   - SSH
   - TCP
   - TCP/IP
+  - DRBD
 
 
