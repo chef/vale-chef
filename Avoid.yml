@@ -12,7 +12,5 @@ tokens:
   - app(?:lication)? file
   - App(?:lication)? file
   - backbone
-  - backend
   - contiguous
 exceptions:
-  - Backend
