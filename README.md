@@ -44,8 +44,7 @@ habitat_supervisor.yml
 inclusive.yml
 policyfile.yml
 
-We should consolidate the Chef brand lints at some point.
-We should handle the Microsoft lints correctly, as documented on [docs.errata.ai](https://docs.errata.ai/vale/config)
+TODO: We should handle the Microsoft lints correctly, as documented on [docs.errata.ai](https://docs.errata.ai/vale/config)
 
 ## Releasing
 
