@@ -14,10 +14,12 @@ Exceptions to the Microsoft style:
 
 |Style|Chef|Microsoft|
 |-----|----|---------|
-|headings|title-case|sentence-case|
+||eadings|title-case|sentence-case|
+|HeadingAcronyms|yes|no|
 |Contractions|no|yes|
 |RangeFormat|no|yes|
 |Quotes|no|yes|
+|GeneralURL|no|yes|
 
 Extended lints:
 
