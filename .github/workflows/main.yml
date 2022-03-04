@@ -6,8 +6,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-      with:
-        fetch-depth: '0'
+    with:
+      fetch-depth: '0'
     permissions:
       contents: write
     steps:
