@@ -4,6 +4,9 @@ level: error
 ignorecase: false
 swap:
   'Microsoft Windows': Windows
-  'windows': Windows
+  ' windows ': Windows
   'linux': Linux
+exceptions:
+  '`windows`'
+  'knife-windows'
 
