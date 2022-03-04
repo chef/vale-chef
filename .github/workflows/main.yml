@@ -4,12 +4,24 @@ on:
     branches:
       - master
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
       with:
         fetch-depth: '0'
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v2
+    - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@1.36.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEFAULT_BUMP: patch
+        WITH_V: true
+        INITIAL_VERSION: 0.1.0
+        TAG_CONTEXT: repo
+        PRERELEASE_SUFFIX: beta
+        VERBOSE: true
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
@@ -21,13 +33,10 @@ jobs:
       with:
         artifacts: "release.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
-    - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@1.36.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        DEFAULT_BUMP: patch
-        WITH_V: true
-        INITIAL_VERSION: 0.1.0
-        TAG_CONTEXT: repo
-        PRERELEASE_SUFFIX: beta
-        VERBOSE: true
+        allowUpdates: true
+        artifactErrorsFailBuild: true
+        generateReleaseNotes: true
+        omitBodyDuringUpdate: true
+        omitPrereleaseDuringUpdate: true
+        replacesArtifacts: true
+        omitNameDuringUpdate: true
