@@ -45,3 +45,24 @@ inclusive.yml
 policyfile.yml
 
 We should consolidate the Chef brand lints at some point.
+We should handle the Microsoft lints correctly, as documented on [docs.errata.ai](https://docs.errata.ai/vale/config)
+
+## Releasing
+
+The Vale GitHub Action requires a released `.zip` archive file. The `.github\workflows\main.yaml` workflow is a minimal approach to creating this release.
+
+The release action uses:
+
+- [Zip Release](https://github.com/marketplace/actions/zip-release)
+- [Create Release](https://github.com/marketplace/actions/create-release)
+
+To create a release, add a tag to your PR.
+
+Information about releasing:
+
+1. [How to Release Code With GitHub](https://youtu.be/Ob9llA_QhQY) video.
+1. GitHub [About releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) documentation.
+
+GitHub Actions:
+
+1. CoderDave's detailed video tutorial on [GitHub Actions](https://youtu.be/TLB5MY9BBa4)
