@@ -55,8 +55,17 @@ The release action uses:
 
 - [Zip Release](https://github.com/marketplace/actions/zip-release)
 - [Create Release](https://github.com/marketplace/actions/create-release)
+- [GitHub Tag Bump](https://github.com/marketplace/actions/github-tag-bump)
 
-To create a release, add a tag to your PR.
+**Manual Bumping**: Any commit message that includes #major, #minor, #patch, or #none will trigger the respective version bump. If two or more are present, the highest-ranking one will take precedence. If #none is contained in the commit message, it will skip bumping regardless DEFAULT_BUMP.
+
+**Automatic Bumping**: If no #major, #minor or #patch tag is contained in the commit messages, it will bump whichever DEFAULT_BUMP is set to (which is minor by default). Disable this by setting DEFAULT_BUMP to none.
+
+  This action uses:
+
+  ```yml
+  DEFAULT_BUMP: minor
+  ```
 
 Information about releasing:
 
