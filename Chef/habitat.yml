@@ -4,4 +4,10 @@ level: error
 swap:
   '(?:[^\s]* ){0,2}hart': Chef Habitat Artifact
   '(?:[^\s]* ){0,2}artifact': Chef Habitat Artifact
+  '(?:[^\s]* ){0,2}Builder': Chef Habitat Builder
+  'Depot': Chef Habitat Artifact storage
+  '(?:[^\s]* ){0,2}Studio': Chef Habitat Studio
+  '(?:[^\s]* ){0,2}Supervisor': Chef Habitat Supervisor
+
+
 
