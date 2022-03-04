@@ -44,7 +44,7 @@ habitat_supervisor.yml
 inclusive.yml
 policyfile.yml
 
-TODO: We should handle the Microsoft lints correctly, as documented on [docs.errata.ai](https://docs.errata.ai/vale/config)
+Note: We should handle the Microsoft lints correctly, as documented on [docs.errata.ai](https://docs.errata.ai/vale/config)
 
 ## Releasing
 
