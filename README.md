@@ -50,27 +50,12 @@ Note: We should handle the Microsoft lints correctly, as documented on [docs.err
 
 The Vale GitHub Action requires a released `.zip` archive file. The `.github\workflows\main.yaml` workflow is a minimal approach to creating this release.
 
-The release action uses:
+1. Create a zip file with the Chef lints
 
-- [Zip Release](https://github.com/marketplace/actions/zip-release)
-- [Create Release](https://github.com/marketplace/actions/create-release)
-- [GitHub Tag Bump](https://github.com/marketplace/actions/github-tag-bump)
+    ```bash
+    cd Chef
+    zip -r chef-style.zip ../releases
+    ```
 
-**Manual Bumping**: Any commit message that includes #major, #minor, #patch, or #none will trigger the respective version bump. If two or more are present, the highest-ranking one will take precedence. If #none is contained in the commit message, it will skip bumping regardless DEFAULT_BUMP.
-
-**Automatic Bumping**: If no #major, #minor or #patch tag is contained in the commit messages, it will bump whichever DEFAULT_BUMP is set to (which is minor by default). Disable this by setting DEFAULT_BUMP to none.
-
-  This action uses:
-
-  ```yml
-  DEFAULT_BUMP: minor
-  ```
-
-Information about releasing:
-
-1. [How to Release Code With GitHub](https://youtu.be/Ob9llA_QhQY) video.
-1. GitHub [About releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) documentation.
-
-GitHub Actions:
-
-1. CoderDave's detailed video tutorial on [GitHub Actions](https://youtu.be/TLB5MY9BBa4)
+2. Commit the changes and merge
+3. Create and tag the release from the [release tab](https://github.com/chef/vale-chef/releases)
