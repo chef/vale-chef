@@ -9,9 +9,9 @@ action:
 swap:
   '\b(?:eg|e\.g\.)[\s,]': for example
   '\b(?:ie|i\.e\.)[\s,]': that is
-  via: through, with
-  per: as
-  colour: colour
+  via: using
+  '\b(?:per)[\s,]': for each
+  colour: color
   neighbour: neighbor
   apologise: apologize
   organise: organize
