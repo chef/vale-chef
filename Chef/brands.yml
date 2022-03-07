@@ -7,6 +7,7 @@ swap:
   ' windows ': Windows
   'linux': Linux
 exceptions:
-  - '`windows`'
-  - 'knife-windows'
+  - knife-windows
+  - "`windows`"
+
 

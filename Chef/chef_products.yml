@@ -4,7 +4,6 @@ level: error
 ignorecase: false
 swap:
   '(?:[^\s]*) ?Automate': Chef Automate
-  '(?:[^\s]*(Windows|macOS)) ?Desktop': Chef Desktop
   'chefdesktop': Chef Desktop
   'chef client': Chef Infra Client
   'chef-client': Chef Infra Client

@@ -244,7 +244,7 @@ tokens:
   - valiantly
   - vastly
   - verbally
-  - very
+  -  very
   - viciously
   - victoriously
   - violently
@@ -268,3 +268,6 @@ tokens:
   - zealously
   - zestfully
   - zestily
+exceptions:
+  - deeply-nested
+  - poorly designed
